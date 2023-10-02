@@ -1,0 +1,82 @@
+@model UserRegister
+
+<html>
+<head></head>
+
+<body>
+    <div class="container">
+        <div>
+            <h2>Digite suas informações para se cadastrar</h2>
+        </div>
+
+        <form method="post" asp-action="RegisterUserIntoDB" asp-controller="Register">
+
+            <div class="row mt-2">
+                <div class="col-lg-4">
+                    <input type="text" class="form-control" asp-for="Email" placeholder="E-Mail">
+                </div>
+                <div class="col-lg-4">
+                    <input type="text" class="form-control" asp-for="Password" placeholder="Senha">
+                </div>
+            </div>
+
+            <div class="row mt-2">
+                <div class="col-lg-4">
+                    <input type="text" class="form-control" asp-for="Name" placeholder="Nome">
+                </div>
+                <div class="col-lg-4">
+                    <input type="text" class="form-control" asp-for="Lastname" placeholder="Sobrenome">
+                </div>
+            </div>
+
+
+
+            <div class="row mt-3">
+                <div class="col-lg-4">
+                    <input type="text" class="form-control" asp-for="Identity" placeholder="CPF">
+                </div>
+                <div class="col-lg-4">
+                    <input type="text" class="form-control" asp-for="RG" placeholder="RG">
+                </div>
+                <div class="col-lg-4">
+                    <input type="text" class="form-control" asp-for="Birthday" placeholder="Data Nascimento">
+                </div>
+            </div>
+
+            <div class="row mt-3">
+                <div class="col-lg-4">
+                    <input type="text" class="form-control" asp-for=Street placeholder="Endereço">
+                </div>
+                <div class="col-lg-4">
+                    <input type="text" class="form-control" asp-for=Country placeholder ="País">
+                </div>
+                <div class="col-lg-4">
+                    <input type="text" class="form-control" asp-for=County placeholder="Municipio">
+                </div>
+                <div class="col-lg-4">
+                    <input type="text" class="form-control" asp-for=State placeholder="Estado">
+                </div>
+            </div>
+
+            <div class="row mt-3">
+                <div class="col-lg-4">
+                    <input type="text" class="form-control" asp-for=Phone1 placeholder="Telefone">
+                </div>
+                <div class="col-lg-4">
+                    <input type="text" class="form-control" asp-for=Phone2 placeholder="Celular">
+                </div>
+            </div>
+
+           <div class="row mt-3">
+                <div class="col-lg-6">
+                    <button  type="submit" class="btn-dark" value="Cadastrar">Cadastrar</button>
+                </div>
+           </div>
+           
+
+        </form>
+
+    </div>
+</body>
+
+</html>

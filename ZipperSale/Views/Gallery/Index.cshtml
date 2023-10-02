@@ -1,0 +1,19 @@
+﻿@model IEnumerable<ShopItem>
+
+<h1>Veja nossos itens</h1>
+
+@foreach (var galleryitem in Model)
+{
+    <div class="col-sm-4 col-lg-4 col-md-4">
+        <div class="thumbnail">
+            <img src="@galleryitem.ItemPic" alt="">
+            <div class="caption">
+                <h3 class="pull-right">@galleryitem.Price</h3>
+                <h3>
+                    
+                </h3>
+                <p>@galleryitem.ItemName</p>
+            </div>
+        </div>
+    </div>
+}
